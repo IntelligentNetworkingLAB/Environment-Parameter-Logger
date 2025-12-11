@@ -13,7 +13,6 @@ from stable_baselines3.common.callbacks import EvalCallback, CheckpointCallback,
 from stable_baselines3.her.her_replay_buffer import HerReplayBuffer
 from typing import Optional, Dict, Any, List
   
-
 class DomainRandomizationWrapper(gym.Wrapper):
     def __init__(self, env, gravity_mean=9.8, gravity_std=0.0, rest_mean=0.5, rest_std=0.0,
                  fric_mean=0.5, fric_lat_std=0.0, fric_roll_std=0.0, fric_spin_std=0.0,
